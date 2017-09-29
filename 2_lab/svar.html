@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="svar.css">
+</head>
+
+<body id="topp">
+  <ol>
+    <li>
+      <h2>Hva brukes CSS til?</h2>
+      <p>
+        SS brukes til å gi stiler/egenskaper til forskjellige elementer på en nettside. For eksempel endre posisjoner, farger oppførsel osv.
+      </p>
+    </li>
+    <li>
+      <h2>Hva er en CSS-regel og hva er oppbygningen av den?</h2>
+      <p>
+        en CSS-regel er en "bestemmelse"/bit av et css-dokument som bestemmer hva som skal skje med angitte biter av et HTML-dokument. En slik bestemmelse kan for eksempel angi hva som skal skje med en overskrift og gi den animasjoner (css3) eller bakgrunnsfarger/fonter
+        osv.
+        <br><br>
+        En css-regel er bygget opp slik: "selector {declaration}" <br>
+        Eksempel på en css-regel: "h1{color: red;}"
+      </p>
+    </li>
+    <li>
+      <h2>Hva er en CSS-velger (selector)?</h2>
+      <p>
+        en selector er den biten av en bestemmelse/regel som sier hvilken bit av dokumentet som skal påvirkes av regelen. i CSS-regelen "h1 {color: red;}" er "h1" selectoren. Det er h1 det blir angitt at d
+        det er tagen som heter "h1" som skal endres
+      </p>
+    </li>
+    <li>
+      <h2>Hvilke CSS-velgere finnes?</h2>
+      <p>
+        type-, class- og id-velgere
+      </p>
+    </li>
+    <li>
+      <h2>Hva er forskjellen mellom id- og class-velgerne i CSS?</h2>
+      <p>
+        en id-velger noteres med "#" og en class-velger noteres med "." som prefiks. <br>
+        En id-velger viser dessuten kun til ett element. En class-velger kan dekke flere elementer på dokumentet
+      </p>
+    </li>
+    <li>
+      <h2>Legg til tekst i en h1-tag. Endre på tekstfargen og størrelsen på deler av
+      teksten/bokstavene slik at du får en kreativ og fargerik tekst. Hint: span.</h2>
+      <h1>
+        <span class="lys size1 overskrift">h</span>
+        <span class="mork size2 overskrift">u</span>
+        <span class="lys size2 overskrift">n</span>
+        <span class="mork size1 overskrift">d</span>
+        <span class="lys size3 overskrift">e</span>
+        <span class="mork size2 overskrift">r</span>
+      </h1>
+    </li>
+    <li>
+      <h2>Hvordan kan man få tekst til å være høyrejustert istedenfor
+        venstrejustert?</h2>
+        <p id="venstrejustert">denne teksten er høyrejustert gjennom "text-align: right;" som deklarasjon</p>
+    </li>
+    <li>
+      <h2>Hvordan endrer man bildestørrelse med CSS?</h2>
+      <p>man kan bruke declaration: width og height, for eksempel "img{height: 200px}"</p> <br>
+      <h3>større</h3>
+      <img src="https://vetstreet.brightspotcdn.com/dims4/default/f620010/2147483647/crop/0x0%2B0%2B0/resize/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2Fe6%2Fce6090a10811e087a80050568d634f%2Ffile%2FNewfoundland-1-645mk062411.jpg" id="storreBilde">
+      <h3>mindre</h3>
+      <img src="https://vetstreet.brightspotcdn.com/dims4/default/f620010/2147483647/crop/0x0%2B0%2B0/resize/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2Fe6%2Fce6090a10811e087a80050568d634f%2Ffile%2FNewfoundland-1-645mk062411.jpg" id="mindreBilde">
+      <p>NOTE: om man bare justerer høyde eller bredde(ikke begge) vil det man ikke har justert, automatisk tilpasse seg.
+      Slik unngår man at bilder strekkes og forskyves</p>
+    </li>
+    <li>
+      <h2>Hvordan lager man interne lenker slik Wikipedia bruker i Contents-
+        boksen: http://en.wikipedia.org/wiki/HTML</h2>
+      <p>Slike "interne linker" - også "ankerlinker" - kan man legge til gjennom å referrere til en id i dokumentet
+      med "#" og effekten vil bli <a href="#topp">slik</a></p>
+    </li>
+    <li>
+      <h2>Hva er hensikten med div-tagen?</h2>
+      <p>div-tagens hensikt er å gruppere elementer med tanke på design. Samler elementer i samme block.
+      Det skiller den fra span-tag, fordi span-tag markerer en liten bit av en større block (for eksempel
+      en o.l). Har først og fremst til hensikt å bedre strukturen for utvikler</p>
+    </li>
+    <li>
+      <h2>Er det riktig at en id bare kan brukes kun på ett element i et HTML-
+        dokument?</h2>
+      <p>Nei. Det er mulig. Moderne nettlesere vil tolke dokumentet ditt i beste mening, men det kan fort
+      skape forvirring i og med at ting som f.eks "document.getElementByid()" kun vil returnere den første
+      osv. <a href="https://stackoverflow.com/questions/7262195/several-elements-with-the-same-id-responding-to-one-css-id-selector">kilde</a></p>
+      <p id="dobbelId">første med duplisert id</p>
+      <p id="dobbelId">andre med duplisert id</p>
+    </li>
+    <li>
+      <h2>Boksmodellen (engelsk: box model) viser til tre egenskaper- hvilke tre er
+        disse og hva er de til?</h2>
+        <dl>
+          <dt>margin</dt>
+          <dd>et gjennomsiktig område utenfor border</dd>
+          <dt>border</dt>
+          <dd>et område rundt, mellom margin og padding</dd>
+          <dt>padding</dt>
+          <dd>et usynlig område mellom content og border</dd>
+          <dt><b>content</b></dt>
+          <dd>Der tekst, bilder og annet innhold vises</dd>
+        </dl>
+    </li>
+    <li>
+      <h2>Kan man sette bakgrunnsfarge på egenskapen margin?</h2>
+      <p>Nei, i boksmodellen skal man ikke kunne det</p>
+    </li>
+    <li>
+      <h2>Hvordan kan man slå sammen border-color, border-style og border-
+        width?</h2>
+      <p>det kan man gjøre ved å kun skrive "border" i css, etterfulgt av alle argumentene
+      som hører til de tre deklarasjonene.</p>
+      <p id="hverForSegCss">Gjort hver for seg i css</p>
+      <p id="slattSammenCss">Slått sammen i css -> viktig rekkefølge: 1. width-argument, 2. style-argument og 3. color-argument</p>
+
+    </li>
+    <li>
+      <h2>Hva er (CSS) web tiling? Opprett noen divisjoner hvor du tiler
+        bakgrunnen på dem.</h2>
+        <div class="repeat" id="repeat1">
+        </div>
+        <div class="repeat" id="repeat2">
+        </div>
+    </li>
+    <li>Hva styrer repeat-x og repeat-y? Hvilke andre verdier finnes det som kan
+      angis i denne sammenheng?</li>
+      <p>I utgangspuntet repeteres bakgrunnsbildet i alle retninger. Med "background: repeat-y" vil det
+      kun gjentas horisontalt og med "background: repeat-x" vil det kun gjentas vertikalt.</p>
+      <div id="repeatx">
+      </div>
+      <div id="repeaty">
+      </div>
+      <li>
+        <h2>Test ut egenskapen min-width på en div som du gir bredde, høyde og bakgrunnsfarge en nettside.</h2>
+        <div id="minWidth"></div>
+      </li>
+      <li>
+        <h2>Hva er white-space egenskapen for?</h2>
+        <p id="whitespaceTest">
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        </p>
+        <p><i>white-space</i> handler om hvordan tekst håndteres dersom det ikke er mer plass
+        i elementet. Altså hvordan teksten "wrappes"</p>
+      </li>
+      <li>
+        <h2>Hva skjer når du bruker negativ verdi på margin? Test ut ved å ha to
+          synlige elementer ved siden av hverandre</h2>
+
+          <p>Med negativ margin kan ting overlappes</p>
+      </li>
+      <li>
+        <h2>Kan man ha forskjellige størrelser på marginen på forskjellige sider av et
+          element? Gjelder det samme mht. border og padding?</h2>
+          <p>Ja, det kan man. Gjennom border-left, padding-right, margin-top osv.</p>
+      </li>
+      <li>
+        <h2>Kan man sette forskjellige farger på forskjellige sider av en border- for
+          eksempel at border på toppen av et element er rød og border på bunn er
+          blå?</h2>
+          <p id="spm21">Ja, det kan man</p>
+      </li>
+      <li>
+        <h2>Kan et HTML-element ha flere klasser?</h2>
+        <p>Ja, slik: class="klasse1 klasse2 klasse3"</p>
+      </li>
+  </ol>
+</body>
+
+</html>

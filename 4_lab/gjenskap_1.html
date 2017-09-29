@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>gjenskap_1</title>
+    <style media="screen">
+      #html, body{
+        margin: 0;
+        padding: 0;
+      }
+      #image{
+        position: relative; /*all elements are positioned relative to this #image-container*/
+        width: 80vw;
+        height: 85vh;
+        margin: auto;
+        background-color: rgb(67, 192, 214);
+      }
+      .ground{
+        position: absolute;
+      }
+      #ground{
+        width: 80vw;
+        height: 5vh;
+        background-color: rgb(46, 172, 62);
+        bottom: 0vh
+      }
+      #car{
+        width: 30vw;
+        bottom: 5vh;
+        left: 10vw;
+      }
+      #tree{
+        bottom: 5vh;
+        left: 25vw;
+        z-index: 1;
+      }
+      #sun{
+        height: 10vh;
+        width: 10vh;
+        background-color: yellow;
+        border-radius: 5vh;
+        left: 60vw;
+        top: 27.5vh;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="image">
+      <img id="tree" class="ground" src="https://image.ibb.co/cbBv8w/tree.png" alt="tree">
+      <img id="car" class="ground" src="https://preview.ibb.co/mGqV8w/subaru.png" alt="carde av car">
+      <div id="sun" class="ground"></div>
+      <div id="ground" class="ground"></div>
+    </div>
+  </body>
+</html>

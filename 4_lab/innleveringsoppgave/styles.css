@@ -1,0 +1,12 @@
+html,
+body {
+  height: 100%; /*for å sikre at alle nettlesere sjekker høyde på samme måte*/
+  margin: 0; /*unngå stygge kanter */
+  padding: 0;
+}
+#ani-container {
+  position: relative; /*alle elementer vil forholde seg i forhold til container, ikke hele viewport*/
+  height: 100%;
+  width: 100%;
+  background-image: url('https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.unilad.co.uk%2Fwp-content%2Fuploads%2F2015%2F09%2Fspace55.jpg&f=1');
+}

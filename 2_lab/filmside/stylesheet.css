@@ -1,0 +1,29 @@
+body {
+  background-color: rgb(144, 84, 138);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.banner {
+  text-decoration: underline;
+  text-align: center;
+  width: 55%;
+  display: block;
+  margin: auto;
+  background-color: rgb(128, 161, 33);
+  border-style: solid;
+}
+.content {
+  width: 55%;
+  margin: auto;
+}
+.underline {
+  text-decoration: underline;
+}
+#infomeny, ul, li {
+  font-size: 1.3em;
+}
+#filmrute {
+  display: inline-block;
+}

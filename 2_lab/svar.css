@@ -1,0 +1,99 @@
+
+.overskrift {
+  text-decoration: underline;
+}
+.mork {
+  color: rgb(17, 45, 78);
+}
+.lys {
+  color: rgb(199, 217, 89);
+}
+.size1 {
+  font-size: 1.5em;
+  border-top-style: ridge;
+  border-top-color: rgb(215, 86, 214);
+  border-top-width: 0.3em;
+}
+.size2 {
+  font-size: 3em;
+  border-top-style: double;
+  border-top-color: rgb(83, 186, 144);
+}
+.size3 {
+  font-size: 4.2em;
+  border-top-style: dotted;
+  border-top-color: rgb(107, 31, 106);
+  border-top-width: thick;
+}
+#venstrejustert {
+  text-align: right;
+}
+#storreBilde {
+  height: 15em;
+}
+#mindreBilde {
+  height: 7.5em;
+}
+#dobbelId {
+  background-color: rgb(157, 208, 167);
+}
+#hverForSegCss {
+  border-color: red;
+  border-style: dotted;
+  border-width: 0.4em;
+}
+#slattSammenCss {
+  border: 0.4em dotted red;
+}
+.repeat {
+  height: 400px;
+  width: 300px;
+  display: inline-block;
+  background-repeat: repeat;
+}
+#repeat1 {
+  background-image: url("https://s-media-cache-ak0.pinimg.com/736x/f5/57/cf/f557cff21c81ee7cab1ca3274ae35fb8--dog-lover-gifts-lovers-gift.jpg");
+}
+#repeat2 {
+  background-image: url("https://s-media-cache-ak0.pinimg.com/736x/90/e3/15/90e3158f05b5ca1c54718ddb6510507a--easy-acrylic-paintings-dog-paintings.jpg");
+}
+#repeatx {
+  height: 800px;
+  width: 800px;
+  display: inline-block;
+  background-repeat: repeat-x;
+  background-image: url("https://s-media-cache-ak0.pinimg.com/736x/f5/57/cf/f557cff21c81ee7cab1ca3274ae35fb8--dog-lover-gifts-lovers-gift.jpg");
+}
+#repeaty {
+  height: 800px;
+  width: 800px;
+  display: inline-block;
+  background-repeat: repeat-y;
+  background-image: url("https://s-media-cache-ak0.pinimg.com/736x/f5/57/cf/f557cff21c81ee7cab1ca3274ae35fb8--dog-lover-gifts-lovers-gift.jpg");
+}
+#minWidth {
+  background-color: rgb(43, 140, 182);
+  min-width: 500px;
+  width: 300px;
+  height: 300px;
+}
+#whitespaceTest{
+  white-space: pre-line;
+}
+.spm19 {
+  display: inline-block;
+  background-color: rgb(201, 241, 165);
+  height: 300px;
+  width: 300px;
+}
+#marginpositiv {
+  margin:  50px;
+}
+#marginnegativ {
+  margin: -50px;
+}
+#spm21 {
+  border-top-color: red;
+  border-bottom-color: blue;
+  border-style: outset;
+}

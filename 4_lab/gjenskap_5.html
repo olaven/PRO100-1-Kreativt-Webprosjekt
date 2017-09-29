@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>gjenskap_3</title>
+    <style media="screen">
+      #html, body{
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /*to deny scrolling*/
+      }
+      #image{
+        position: relative;
+        width: 80vw;
+        height: 85vh;
+        margin: auto;
+        background-color: rgb(67, 192, 214);
+      }
+      .image-element{
+        position: absolute;
+      }
+      #ground{
+        width: 80vw;
+        height: 5vh;
+        background-color: rgb(46, 172, 62);
+        bottom: 0vh;
+      }
+      .cars{
+        transform: rotate(270deg);
+        bottom: 17vh;
+        height: 15vh;
+      }
+      #car-0{
+        left: 0vw; /*not needed, but added for clarity*/
+      }
+      #car-1{
+        left: 15vw;
+      }
+      #car-2{
+        left: 30vw;
+      }
+      #car-3{
+        left: 45vw; 
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="image">
+      <img id="car-0" class="cars image-element" src="https://preview.ibb.co/mGqV8w/subaru.png" alt="image of car">
+      <img id="car-1" class="cars image-element" src="https://preview.ibb.co/mGqV8w/subaru.png" alt="image of car">
+      <img id="car-2" class="cars image-element" src="https://preview.ibb.co/mGqV8w/subaru.png" alt="image of car">
+      <img id="car-3" class="cars image-element" src="https://preview.ibb.co/mGqV8w/subaru.png" alt="image of car">
+
+      <div id="ground" class="image-element"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+body {
+  background-color: rgb(104, 113, 113);
+  font-family: monospace;
+}
+
+header {
+  width: 60%;
+  margin: auto;
+
+  text-align: center;
+}
+header #overskrift {
+  background-color: rgb(135, 222, 150);
+  color: rgb(6, 68, 59);
+
+  font-size: 1.3rem;
+
+  margin: 0;
+}
+header #overskrift span {
+  font-size: 0.5em;
+  text-decoration: underline;
+  font-style: italic;
+}
+header #navigasjonsmeny {
+  background-color: rgb(200, 44, 143);
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+
+  line-height: 3;
+
+  font-size: 1rem;
+}
+header .menyvalg {
+  border-top-style: solid;
+  border-bottom-style: solid;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+
+  font-size: 1.05em;
+  font-weight: bold;
+}
+a:hover {
+  color: rgb(99, 61, 93);
+}
+
+#artikler-container {
+  background-color: rgb(164, 207, 228);
+
+  width: 85%;
+  margin: auto;
+}
+.artikler {
+  padding-left: 2rem;
+  padding-right: 0.75rem;
+}
+.artikler h2 {
+  padding-left: -0.5rem;
+  padding-bottom: 0;
+}
+.artikler p {
+  border-style: inset;
+  padding: 0.5rem;
+
+  border-color: rgb(92, 213, 184);
+
+  font-size: 1.2rem;
+}
+
+#artikler-container #til-topp {
+  margin: 2rem;
+  font-size: 2em;
+}
+
+#galleri-artikkel img {
+  margin: auto;
+  height: 10em;
+}
