@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <style>
+      body, head{
+        margin: 0;
+        padding: 0;
+      }
+      #ani-container{
+        position: relative;
+
+        margin: auto;
+        overflow-y: hidden;
+
+        width: 840px;
+        height: 600px;
+
+        background-color: cyan;
+      }
+      .ani-element{
+        position: absolute;
+      }
+
+      /*--INFOBOKS--*/
+      #infotext{
+        background-color: rgba(0, 0, 0, 0.5);
+        display: inline-block;
+        padding: 10px;
+        margin: 10px;
+        color: white;
+      }
+      /*--SUMO--*/
+      #sumo{
+        bottom: 0px;
+        height: 100px;
+        left: 45%;
+
+        transition: height 5s linear;
+      }
+      #sumo:hover{
+        height: 900px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="ani-container">
+      <div id="infotext" id="ani-element">Hjelp sumobryter ved å peke på ham</div>
+      <!-- --IMAGES-- -->
+      <img id="sumo" class="ani-element" alt="bilde av sumobryter" src="https://image.ibb.co/iE2k8w/sumo.png"/>
+    </div>
+  </body>
+</html>
