@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body{
+        margin: 0;
+      }
+      #ani-container{
+        position: relative;
+
+        width: 70rem;
+        height: 50rem;
+
+        margin: auto;
+
+        background-color: rgb(93, 159, 120);
+      }
+      .ani-element{
+        position: absolute;
+      }
+      #infotext{
+        font-size: 2rem;
+        background-color: rgba(0,0,0,0.4);
+        color: rgb(124, 153, 167);
+        display: inline-block;
+        padding: 2rem;
+        margin: 1rem;
+      }
+      #driving-container{
+        height: 20vh;
+        width: 30vw;
+        bottom: 0;
+      }
+      #infotext:hover ~ #driving-container{
+        left: 60vw;
+      }
+      #bil{
+        height: 20vh;
+      }
+      #reklametext{
+        bottom: 30vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="ani-container">
+      <div id="driving-container" class="ani-element">
+        <div id="reklametext" class="ani-element">Kjøp denne bilen! kjører i 20 sekunder!</div>
+        <img id="bil" class="ani-element" src="http://carpng.com/wp-content/uploads/full/taxi-cartoon.png" />
+      </div>
+      <div id="infotext" class="ani-element">Kjør!</div>
+    </div>
+  </body>
+</html>
