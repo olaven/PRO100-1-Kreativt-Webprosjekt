@@ -1,0 +1,141 @@
+body {
+  background-color: rgba(119, 70, 158, 0.7); /*purple*/
+  font-family: fantasy;
+  margin: 0;
+  overflow-x: hidden;
+}
+/*--FOCUS: index.html --*/
+/*ELEMENTS IN HEADER*/
+#header-container {
+  position: relative;
+  width: 60%;
+  margin: auto; /*container position*/
+  text-align: center; /*center-align the content */
+  background-color: rgb(81, 140, 175); /*light blue*/
+
+  border-radius: 30%;
+  border-style: dotted;
+  border-color: rgba(93, 8, 161, 0.35); /*darker purple*/
+}
+#header-container h1 {
+  display: inline-block;
+  transform: scale(1.75);
+
+  text-decoration: line-through;
+  text-decoration-color: rgb(86, 0, 91);
+  /*I wanted more "air"*/
+  margin-bottom: 5%;
+  margin-top: 4%;
+}
+.navigation-elements {
+  list-style-type: none; /*remove bullet-points*/
+  display: inline; /*side by side */
+}
+.navigation-elements a,
+#toTheTop-container {
+  /*#toTheTop-container is further modified near the
+    bottom of this document. I just wanted it to have the
+    same basis as the other links before I started to
+    customize it.*/
+  text-decoration: none; /*because links are ugly*/
+  color: inherit;
+  background-color: rgba(53, 72, 115, 0.4); /*dark blue*/
+
+  padding: 3%;
+  padding-bottom: 1.5%; /*overriedes "padding"*/
+
+  border-radius: 20%;
+  border-style: solid;
+  border-color: rgba(93, 8, 161, 0.35); /*same as container-border*/
+}
+/*END, ELEMENTS IN HEADER*/
+/*--ARTICLES--*/
+#article-container {
+  width: 80%;
+  margin: auto;
+}
+#article-container h2 {
+  margin-left: 1%;
+
+  display: inline-block; /*inline-block and not inline to get more distance*/
+}
+#article-container h3 {
+  text-decoration: underline;
+}
+#article-container h2,
+#article-container h3 {
+  margin-left: 2%;
+}
+#article-container p {
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 4.5%;
+
+  border-bottom-color: rgba(93, 8, 161, 0.35);
+  border-bottom-style: solid;
+  border-radius: 5%;
+
+  padding: 1%;
+  background-color: rgb(74, 209, 141); /*lysest grønn*/
+}
+.articles {
+  background-color: rgb(29, 184, 106); /*mørkest grønn*/
+  border-radius: 5%; /*noe avrundting på hjørner*/
+}
+.articles:hover {
+  border-style: solid;
+}
+#whyCare-article h3 a {
+  /*make the link more easy on the eyes*/
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2em;
+}
+/*--END, ARTICLES--*/
+/*--TO THE TOP-LINK--*/
+#toTheTop-container {
+  position: fixed;
+
+  width: 5%;
+  height: 7.5%;
+  top: 0.5%;
+  left: 81.75%;
+
+  padding: 0;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+/*--END, TO THE TOP-LINK--*/
+/*--SHADOWNHEADER-EFFECT--*/
+#header-container h1,
+.articles h2 {
+  border-bottom-style: solid;
+  border-right-style: solid;
+  /*curve the shadow*/
+  border-top-left-radius: 15%;
+
+  /*create an illusion of the border "containing"/constraining the word*/
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/*--END, SHADOWNHEADER-EFFECT--*/
+/*--END, FOCUS: index.html--*/
+/*--FOCUS: images.html--*/
+/*--IMAGES--*/
+.banners {
+  width: 100%;
+}
+#frame {
+  position: relative;
+  margin: auto;
+
+  width: 40%;
+  height: 40%;
+}
+.images {
+  width: 100%;
+
+  border-style: solid;
+  border-color: rgb(120, 60, 76);
+}
+/*--END, IMAGES--*/
+/*--END, FOCUS: images.html--*/
